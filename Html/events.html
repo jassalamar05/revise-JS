@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1 id="head">Hello</h1>
+
+    <button id="b">Chnage</button>
+
+    <h1 id="j"></h1>
+
+    <!-- inpuit chage -->
+
+    <input type="text" value="kida janab" name="" id="name">
+
+    <button id="btn">show</button>
+
+    <script>
+    let b=document.getElementById("btn")
+
+    b.addEventListener("click",function(){
+        alert("btn clicked")
+    })
+
+    let h=document.getElementById("head")
+
+    let btn=document.getElementById("b")
+
+    btn.addEventListener("click",function(){
+        h.innerText="java"
+    })
+
+
+    let d=document.getElementById("name")
+   let hass=document.getElementById("btn")
+    let dekhe=document.getElementById("j")
+    hass.addEventListener("click",function(){
+        dekhe.innerText=d.value
+    })
+    </script>     
+</body>
+</html>

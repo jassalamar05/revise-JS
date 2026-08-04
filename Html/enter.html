@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" id="forms">
+        <input type="text" name="" id="sat">
+
+        <button>SUBMIT</button>
+    </form>
+
+
+    <script>
+    let s=document.getElementById("forms")
+    let f=document.getElementById("sat")
+    s.addEventListener("submit",function(e){
+        e.preventDefault()
+
+        console.log("submitted")
+        f.value=""
+
+    })
+    </script>
+    
+</body>
+</html>

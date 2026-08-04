@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+    color:red;
+}
+
+.big{
+    font-size:40px;
+}
+
+.dark{
+    background:black;
+    color:white;
+}
+
+.round{
+    border-radius:20px;
+}
+
+.blue{
+    color:blue;
+}
+    </style>
+</head>
+<body>
+
+<h1 id="head">hello</h1>
+
+<button id="btn">Add class</button>
+
+
+<h1 id="head1" class="red active">Hello</h1>
+<button id="btn1">Remove</button>    
+ <button id="btn2">Toggle</button>
+<script>
+   let heading=document.getElementById("head")
+   
+   let button =document.getElementById("btn")
+
+button.addEventListener("click",function(){
+    heading.classList.add("red")
+})
+
+
+  let head2=document.getElementById("head1")
+   
+   let btn2 =document.getElementById("btn1")
+
+   let btn3=document.getElementById("btn2")
+   let btn22=document.getElementById("btn2")
+   btn2.addEventListener("click",function(){
+    head2.classList.remove("red")
+
+    console.log(head2.classList.contains("red"))
+   })
+    
+   btn2.addEventListener("click",function(){
+    head2.classList.toggle("active")
+   })
+
+   btn22.addEventListener("click",function(){
+    head2.classList.toggle("active")
+     console.log(head2.classList)
+   })
+
+  
+
+</script>
+</body>
+</html>
