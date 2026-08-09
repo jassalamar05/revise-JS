@@ -133,8 +133,20 @@ function first(str){
 console.log(first("asdasAASDA"))
 // Capitalize Every Word ⭐⭐⭐
 function Captial(str){
-    
+    let k="";
+
+for(let i=0;i<=str.length-1;i++){
+    if(i ==0){
+        k+=str[i].toUpperCase()
+    }else if(str[i-1]==" "){
+        k+=str[i].toUpperCase()
+    }else{
+        k+=str[i]
+    }
 }
+return k;
+}
+console.log(Captial("i am the tger banda"))
 // Remove Extra Spaces ⭐⭐
 function Extra(str){
 
@@ -147,3 +159,5 @@ function Extra(str){
     return p;
 }
 console.log(Extra("asd asd asd asd asd"))
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="parent">
+<p>Apple</p>
+<p>Mango</p>
+</div>
+
+<script>
+    let parent=document.getElementById("parent")
+
+    let newPara=document.createElement("p")
+
+    newPara.innerText="Banana"
+    parent.appendChild(newPara,document.createElement("br"),"ahaha")
+
+    //  appenf
+    let list=document.getElementById("parent")
+    list.append("orange",document.createElement("br"),"world")
+
+    // prepend -satringmei
+
+    let li=document.createElement("li")
+    li.innerText="orange"
+    list.prepend(li)
+
+
+    let first=list.firstElementChild;
+    list.removeChild(first)
+
+    // remove
+    // let remove=document.getElementById("list")
+    // list.remove();
+
+    // replace
+
+    let news=document.createElement("li")
+    news.innerText="peas";
+
+    let old=list.children[0];
+    list.replaceChild(news,old
+    )
+
+
+    // clone abanan
+    let copy=list.cloneNode(true)
+    document.body.appendChild(copy)
+</script>
+    
+</body>
+</html>
